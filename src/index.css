@@ -1,0 +1,40 @@
+/* google FONTS POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  font-family: "Poppins", "sans-serif";
+}
+
+.App {
+  display: flex;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  
+}
+
+::-webkit-scrollbar-track {
+   background:#405189 ; 
+}
+
+::-webkit-scrollbar-thumb{
+  background: #717FA0;
+  /* background: linear-gradient(#642bff, #ff22e6); */
+  border-radius: 10px;
+}
+
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+
+
+

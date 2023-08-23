@@ -1,0 +1,11 @@
+.navbar_container {
+  @media screen and (max-width: 1024px) {
+    transform: translateX((-100%));
+  }
+}
+
+.navbar_mobile_active {
+  @media screen and (max-width: 1024px) {
+    transform: translateX(0);
+  }
+}
