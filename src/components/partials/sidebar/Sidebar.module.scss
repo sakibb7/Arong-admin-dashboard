@@ -1,4 +1,23 @@
 .navbar_container {
+  ::-webkit-scrollbar {
+    opacity: 0;
+    width: 7px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #405189;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #717fa0;
+    /* background: linear-gradient(#642bff, #ff22e6); */
+    border-radius: 10px;
+  }
+
   @media screen and (max-width: 1024px) {
     transform: translateX((-100%));
   }
