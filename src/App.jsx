@@ -2,11 +2,10 @@ import { useState } from "react";
 import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
-import Login from "./pages/Login";
 import Sidebar from "./components/partials/sidebar/Sidebar";
 import Navbar from "./components/partials/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Ecommerce from "./pages/dashboards/ecommerce/Ecommerce";
 
 function App() {
   const [fullMenu, setFullMenu] = useState(false);
@@ -27,10 +26,9 @@ function App() {
         >
           <Navbar fullMenu={fullMenu} setFullMenu={setFullMenu} />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Ecommerce />} />
           </Routes>
+          <Footer />
         </main>
       </div>
     </BrowserRouter>

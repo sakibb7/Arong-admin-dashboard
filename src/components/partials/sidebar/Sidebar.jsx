@@ -35,11 +35,11 @@ function Sidebar({ fullMenu, setFullMenu }) {
 
   return (
     <div
-      className={`bg-[rgb(64,81,137)] transition ease-in-out duration-600 text-[#abb9e8] ${
+      className={`bg-[rgb(64,81,137)]  text-[#abb9e8] ${
         styles.navbar_container
       } ${
         fullMenu ? " max-[1024px]:translate-x-0 " : undefined
-      } transition-all duration-300 ease-in-out`}
+      } transition ease-in-out duration-600`}
     >
       <div className="flex justify-center items-center py-6 sticky">
         <Link to="/">

@@ -14,8 +14,8 @@ function Navbar({ fullMenu, setFullMenu, toggle, setToggle }) {
     setToggle(!toggle);
   }
   return (
-    <nav className="flex justify-between text-[1.3rem] text-slate-500 mx-6">
-      <div className="flex justify-center items-center gap-6 py-5">
+    <nav className="flex justify-between text-[1.3rem] text-slate-500 px-6 bg-[#fff] drop-shadow-sm">
+      <div className="flex justify-center items-center gap-6 py-3">
         <button onClick={handleClick}>
           {fullMenu ? <BsArrowLeft /> : <BsArrowRight />}
         </button>
