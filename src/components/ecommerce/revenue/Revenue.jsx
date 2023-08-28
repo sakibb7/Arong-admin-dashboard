@@ -106,8 +106,8 @@ function Revenue() {
     },
   });
   return (
-    <section className="flex gap-6">
-      <div className="w-[60%] bg-[#fff] rounded-md">
+    <section className="flex max-[1080px]:flex-col gap-6">
+      <div className="xl:w-[65%] bg-[#fff] rounded-md">
         <div className="flex justify-between p-4 items-center">
           <p className="font-semibold text-slate-600">Revenue</p>
           <div className="text-xs flex gap-4 transition duration-300">
@@ -152,19 +152,19 @@ function Revenue() {
           />
         </div>
       </div>
-      <div className="bg-[#fff] rounded-md w-[40%]">
+      <div className="bg-[#fff] rounded-md xl:w-[35%]">
         <div className="flex justify-between py-4 px-4 items-center border-b">
-          <p className="font-semibold text-slate-600">Revenue</p>
+          <p className="font-semibold text-slate-600">Sales by Locations</p>
           <div className="text-xs flex gap-4 transition duration-300">
             <button className="bg-slate-100 hover:bg-slate-600 hover:text-slate-50 text-slate-600 rounded-sm px-2 py-1 transition duration-300">
               Export Report
             </button>
           </div>
         </div>
-        <div style={{ margin: "auto", width: "600px", height: "400px" }}>
+        <div style={{ margin: "auto", width: "400px", height: "300px" }}>
           <VectorMap
             map={worldMill}
-            containerStyle={{ width: 500, height: 400 }}
+            containerStyle={{ width: 400, height: 300 }}
             backgroundColor="#fff"
             zoomOnScroll={false}
             zoomButtons={false}
@@ -184,6 +184,44 @@ function Revenue() {
               },
             }}
           />
+        </div>
+        <div>
+          <div className="flex justify-between items-center text-slate-700 text-sm px-6 py-2 font-[400]">
+            <p>Canada</p>
+            <p>75%</p>
+          </div>
+          <div className=" flex justify-center items-center">
+            <div className="w-[90%] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+              <div
+                className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
+                style={{ width: "75%" }}
+              ></div>
+            </div>
+          </div>
+          <div className="flex justify-between items-center text-slate-700 text-sm px-6 py-2 font-[400]">
+            <p>India</p>
+            <p>45%</p>
+          </div>
+          <div className=" flex justify-center items-center">
+            <div className="w-[90%] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+              <div
+                className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
+                style={{ width: "45%" }}
+              ></div>
+            </div>
+          </div>
+          <div className="flex justify-between items-center text-slate-700 text-sm px-6 py-2 font-[400]">
+            <p>Bangladesh</p>
+            <p>65%</p>
+          </div>
+          <div className=" flex justify-center items-center">
+            <div className="w-[90%] bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+              <div
+                className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
+                style={{ width: "65%" }}
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

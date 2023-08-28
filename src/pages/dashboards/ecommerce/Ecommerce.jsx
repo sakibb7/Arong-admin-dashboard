@@ -2,12 +2,13 @@ import { MdOutlineDateRange } from "react-icons/md";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import AnimatedCard from "../../../ui/animatedCard/AnimatedCard";
 import Revenue from "../../../components/ecommerce/revenue/Revenue";
+import BestSelling from "../../../components/ecommerce/products/BestSelling";
 
 function Ecommerce() {
   return (
     <section className="px-8 py-6 bg-slate-100 flex justify-between gap-6">
       <div className="w-full">
-        <div className="flex justify-between">
+        <div className="flex justify-between max-[620px]:flex-col max-[620px]:items-start max-[620px]:gap-6">
           <div>
             <p className="font-semibold text-slate-700">Good Morning, Sakib!</p>
             <p className="text-sm text-slate-500">
@@ -31,17 +32,16 @@ function Ecommerce() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid lg:grid-cols-4 gap-6 grid-cols-2">
           <AnimatedCard type="ecommerce" />
           <AnimatedCard type="ecommerce" />
           <AnimatedCard type="ecommerce" />
           <AnimatedCard type="ecommerce" />
         </div>
-        <div>
-          <Revenue />
-        </div>
+        <Revenue />
+        <BestSelling />
       </div>
-      <div className="h-full bg-[#ffff] w-[250px]">hello</div>
+      <div className="h-full bg-[#ffff] w-[300px] max-xl:hidden">hello</div>
     </section>
   );
 }
