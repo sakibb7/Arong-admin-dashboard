@@ -11,7 +11,7 @@ function App() {
   const [fullMenu, setFullMenu] = useState(false);
   return (
     <BrowserRouter>
-      <div className={`flex overflow-x-hidden`}>
+      <div className={`flex overflow-x-hidden relative`}>
         <aside
           className={`${
             !fullMenu && "max-[1024px]:hidden"

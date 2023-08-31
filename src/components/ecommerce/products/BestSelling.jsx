@@ -56,7 +56,7 @@ const bestSellingProducts = [
 
 function BestSelling() {
   return (
-    <section className="py-6 flex gap-6">
+    <section className="py-6 flex max-lg:flex-col gap-6">
       <div className="bg-[#fff] lg:w-[50%] ">
         <div className="flex justify-between items-center border-b p-4">
           <p className="text-md font-semibold text-slate-600">

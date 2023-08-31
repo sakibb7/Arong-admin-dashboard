@@ -106,8 +106,8 @@ function Revenue() {
     },
   });
   return (
-    <section className="flex max-[1080px]:flex-col gap-6">
-      <div className="xl:w-[65%] bg-[#fff] rounded-md">
+    <section className="flex max-xl:flex-col gap-6">
+      <div className="xl:w-[65%] w-full bg-[#fff] rounded-md">
         <div className="flex justify-between p-4 items-center">
           <p className="font-semibold text-slate-600">Revenue</p>
           <div className="text-xs flex gap-4 transition duration-300">
@@ -152,7 +152,7 @@ function Revenue() {
           />
         </div>
       </div>
-      <div className="bg-[#fff] rounded-md xl:w-[35%]">
+      <div className="bg-[#fff] rounded-md xl:w-[35%] w-full">
         <div className="flex justify-between py-4 px-4 items-center border-b">
           <p className="font-semibold text-slate-600">Sales by Locations</p>
           <div className="text-xs flex gap-4 transition duration-300">

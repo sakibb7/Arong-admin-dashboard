@@ -1,16 +1,25 @@
 import { MdOutlineDateRange } from "react-icons/md";
-import { AiOutlinePlusCircle, AiFillStar, AiFillMail } from "react-icons/ai";
+import {
+  AiOutlinePlusCircle,
+  AiFillStar,
+  AiFillMail,
+  AiFillCloseCircle,
+} from "react-icons/ai";
 import AnimatedCard from "../../../ui/animatedCard/AnimatedCard";
 import Revenue from "../../../components/ecommerce/revenue/Revenue";
 import BestSelling from "../../../components/ecommerce/products/BestSelling";
 import StoreVisits from "../../../components/ecommerce/StoreVisits";
 import avatarSmall from "../../../assets/images/avatarSmall.jpg";
 import giftBox from "../../../assets/images/download.png";
+import { BiStats } from "react-icons/bi";
+import { useState } from "react";
+import "./style.scss";
 
 function Ecommerce() {
+  const [toggle, setToggle] = useState(true);
   return (
-    <section className=" bg-slate-100 flex justify-between gap-6">
-      <div className="w-full pl-8 py-6">
+    <section className=" bg-slate-100 flex justify-between transition ease-in-out duration-300">
+      <div className="flex-1 px-6 py-6 transition ease-in-out duration-300">
         <div className="flex justify-between max-[620px]:flex-col max-[620px]:items-start max-[620px]:gap-6">
           <div>
             <p className="font-semibold text-slate-700">Good Morning, Sakib!</p>
@@ -33,6 +42,12 @@ function Ecommerce() {
               </span>
               Add Products
             </button>
+            <button
+              className="p-3 rounded-lg bg-blue-200 text-blue-500 hover:bg-blue-500 hover:text-slate-50"
+              onClick={() => setToggle(!toggle)}
+            >
+              <BiStats />
+            </button>
           </div>
         </div>
         <div className="grid lg:grid-cols-4 gap-6 grid-cols-2">
@@ -47,11 +62,21 @@ function Ecommerce() {
           <StoreVisits />
         </div>
       </div>
-      <div className="bg-[#ffff] w-[350px] drop-shadow max-xl:hidden text-slate-400 text-[13px]  p-4">
+      <div
+        className={`${
+          toggle ? "hidden" : ""
+        } transition ease-in-out duration-300 bg-[#ffff] w-[300px] drop-shadow fixed overflow-y-hidden hover:overflow-y-scroll h-screen right-0 top-0  text-slate-400 text-[13px] z-4 p-4 noScrollbar`}
+      >
+        <span className="3xl:hidden fixed top-0 right-0 text-2xl ">
+          {!toggle && <AiFillCloseCircle onClick={() => setToggle(!toggle)} />}
+        </span>
         <p className="uppercase text-slate-500 font-semibold text-[13px] tracking-wide pb-4">
           recent activity
         </p>
-        <div className="pl-4 h-[600px] overflow-y-scroll">
+        <div
+          className="pl-4 h-[600px] overflow-y-hidden hover:overflow-y-scroll scrollBar"
+          style={{ scrollbarGutter: "stable" }}
+        >
           <div className="px-3 border-dashed border-l relative pb-4">
             <img
               src={avatarSmall}
