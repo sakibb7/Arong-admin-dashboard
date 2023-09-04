@@ -16,6 +16,7 @@ import { useState } from "react";
 //Main component start
 function Sidebar({ fullMenu, setFullMenu }) {
   const [toggle, setToggle] = useState(null);
+
   function toggleHandle(i) {
     if (toggle === i) {
       setToggle(null);

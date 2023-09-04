@@ -12,13 +12,13 @@ function App() {
   return (
     <BrowserRouter>
       <div className={`flex overflow-x-hidden relative`}>
-        <aside
+        <div
           className={`${
             !fullMenu && "max-[1024px]:hidden"
           } fixed top-0 left-0 transition ease-in-out duration-300 z-40`}
         >
           <Sidebar fullMenu={fullMenu} setFullMenu={setFullMenu} />
-        </aside>
+        </div>
         <main
           className={`${
             fullMenu ? " lg:ml-[250px]" : "lg:ml-[70px]"
