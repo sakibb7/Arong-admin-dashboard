@@ -22,7 +22,7 @@ function App() {
         <main
           className={`${
             fullMenu ? " lg:ml-[250px]" : "lg:ml-[70px]"
-          } w-full transition-all duration-600 ease-in`}
+          } flex-1 transition-all duration-600 ease-in`}
         >
           <Navbar fullMenu={fullMenu} setFullMenu={setFullMenu} />
           <Routes>

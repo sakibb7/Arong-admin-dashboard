@@ -44,7 +44,7 @@ function Ecommerce() {
             </button>
           </div>
         </div>
-        <div className="grid lg:grid-cols-4 gap-6 grid-cols-2">
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-6 grid-cols-1">
           <AnimatedCard type="ecommerce" />
           <AnimatedCard type="ecommerce" />
           <AnimatedCard type="ecommerce" />

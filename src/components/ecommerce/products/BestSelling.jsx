@@ -56,8 +56,8 @@ const bestSellingProducts = [
 
 function BestSelling() {
   return (
-    <section className="py-6 flex max-lg:flex-col gap-6">
-      <div className="bg-[#fff] lg:w-[50%] ">
+    <section className="py-6 flex max-xl:flex-col gap-6">
+      <div className="bg-[#fff] xl:w-[50%] w-full">
         <div className="flex justify-between items-center border-b p-4">
           <p className="text-md font-semibold text-slate-600">
             Best Selling Products
@@ -143,7 +143,7 @@ function BestSelling() {
           </div>
         </div>
       </div>
-      <div className="bg-[#fff] lg:w-[50%] ">
+      <div className="bg-[#fff] xl:w-[50%] w-full">
         <div className="flex justify-between items-center border-b p-4">
           <p className="text-md font-semibold text-slate-600">Top Sellers</p>
           <p className=" text-slate-600">Report</p>

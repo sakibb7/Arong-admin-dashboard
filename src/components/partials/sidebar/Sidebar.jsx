@@ -26,7 +26,7 @@ function Sidebar({ fullMenu, setFullMenu }) {
   }
 
   function checkWindowSize() {
-    if (window.innerWidth < 1024) setFullMenu(!fullMenu);
+    if (window.innerWidth < 1280) setFullMenu(!fullMenu);
   }
 
   function handleClick(i) {
@@ -39,7 +39,7 @@ function Sidebar({ fullMenu, setFullMenu }) {
       className={`bg-[rgb(64,81,137)]  text-[#abb9e8] ${
         styles.navbar_container
       } ${
-        fullMenu ? " max-[1024px]:translate-x-0 " : undefined
+        fullMenu ? " max-[1280px]:translate-x-0 " : undefined
       } transition ease-in-out duration-600`}
     >
       <div className="flex justify-center items-center py-6 sticky">
